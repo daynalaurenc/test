@@ -137,3 +137,13 @@ function signup(){
 }
 
 signup();
+
+function clickSearch(){
+    var searchClicked = $(".submit");
+
+    searchClicked.on('click', function(){
+        $(".modal3").modal();
+    })
+}
+
+clickSearch();
