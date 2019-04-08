@@ -209,6 +209,30 @@ main {
   margin-left: 10px;
 }
 
+/* button {
+    border: 1 !important;
+    border-color: #FECF0C;
+} */
+
+#email {
+    width: 65%;
+}
+#password {
+    width: 65%;
+}
+
+.modal-close.btn.amber.accent-4 {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+/* button.dairyBtn {
+    background-color: black;
+} */
+.checkbox-orange[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid #ff9800;
+    background-color: white;
+}
+
 footer .container {
     width: 90%;
     right: 0;
