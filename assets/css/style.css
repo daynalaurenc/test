@@ -55,6 +55,10 @@ main {
     text-align: center;
 }
 
+.about-text{
+    text-align: left;
+}
+
 /* Refrigerator Section */
 
 .category {
@@ -76,6 +80,25 @@ main {
     text-align: center !important;
     border: none;
     background-color: transparent;
+}
+
+.dairyBtn:focus, .meatBtn:focus, .veggieBtn:focus, .pantryBtn:focus, .seafoodBtn:focus, .fruitBtn:focus {
+    background-color: transparent;
+    border: 1px solid #FFAB00;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #FFAB00;
+    box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label{
+    color: #FFAB00;
+}
+
+input.valid[type=text]:not(.browser-default){
+    border-bottom: 1px solid #FFAB00;
+    box-shadow: none;
 }
 
 .category-content {
@@ -103,6 +126,37 @@ main {
     width: 10%;
 }
 
+#submit {
+    border: 1px solid #FFAB00;
+    background-color: transparent;
+    color: black;
+}
+
+#submit:hover {
+    /* border: 1px solid #FFAB00; */
+    background-color: #FFAB00;
+    color: white;
+}
+
+#addition {
+    background-color: #FFAB00;
+    color: white;
+}
+
+#addition:hover {
+    background-color: #FECF0C;
+    color: white;
+}
+
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #ffab00;
+    border-bottom: 2px solid #ffab00;
+
+}
+
 /* Recipe Section */
 
 .recipe-content {
@@ -127,6 +181,20 @@ main {
     text-align: center;
 }
 
+#seeMore {
+    border: 1px solid #FFAB00;
+    background-color: transparent;
+    color: black;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#seeMore:hover {
+    /* border: 1px solid #FFAB00; */
+    background-color: #FFAB00;
+    color: white;
+}
+
 /* Recipe Full Page */
 
 #recipePageIcon {
@@ -135,11 +203,11 @@ main {
 }
 
 .recipePage {
-    border-bottom: 1px solid #FECF0C;
+    border-bottom: 1px solid #FFAB00;
 }
 
 .loginRec, .signupRec, .fridgeRec, .favoritesRec  {
-    border: 1px solid #FECF0C;
+    /* border: 1px solid #FECF0C; */
     border-radius: 120px;  
     height: 30px;
     width: 100%;
@@ -159,7 +227,7 @@ main {
 .listSection {
     margin-top: 75px;
     margin-left: 500px;
-    border-right: 1px solid #FECF0C;
+    border-right: 1px solid #FFAB00;
     height: 100%;
 }
 
@@ -169,6 +237,15 @@ main {
 
 #favorite {
     margin-left: 50px;
+    border: 1px solid #FFAB00;
+    background-color: transparent;
+    color: black;
+} 
+
+#favorite:hover {
+    /* border: 1px solid #FFAB00; */
+    background-color: #FFAB00;
+    color: white;
 }
 
 /* Favorite Section Full Page */
@@ -201,12 +278,19 @@ main {
     left: 0;
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
-    border-top: 1px solid #FECF0C;
+    border-top: 1px solid #FFAB00;
 }
 
 #social li {
   display: inline;
   margin-left: 10px;
+}
+.social {
+    background-color: #FFAB00;
+}
+
+.social:hover {
+    background-color: #ffab00;
 }
 
 /* button {
@@ -214,11 +298,22 @@ main {
     border-color: #FECF0C;
 } */
 
-#email {
+#user_name_signup {
     width: 65%;
 }
-#password {
+#user_name_login {
     width: 65%;
+}
+
+#password_signup {
+    width: 65%;
+}
+#password_login {
+    width: 65%;
+}
+
+#password_confirm {
+    width: 65%
 }
 
 .modal-close.btn.amber.accent-4 {
@@ -236,4 +331,49 @@ main {
 footer .container {
     width: 90%;
     right: 0;
+}
+
+
+@media screen and (max-width: 975px){
+
+    .login, .signup {
+        border: none;
+        border-radius: 0;  
+        height: 0;
+        width: 100%;
+        text-align: left;
+        text-transform: none;
+        font-size: 10px;
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    .login {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header{
+        min-height: 550px;
+        margin: 0 auto;
+    }
+    #top-logo{
+      width: 400px;
+    }
+
+    .login, .signup {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        min-height: 550px;
+        margin: 0 auto;
+    }
+    #top-logo{
+      width: 350px;
+      margin: 0 auto;
+    }
 }
